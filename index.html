@@ -354,12 +354,12 @@
                     container.comparePatterns(j, k, 'lightgreen');
                     k++;
                     yield;
-                    container.patternArrayValue.setChar(j-1, k-1 + '++');
+                    container.patternArrayValue.setChar(j-1, k-1 + '   ++');
                 } else {
                     container.comparePatterns(j, k, 'red');
                     k = 0;
                     yield;
-                    container.setPatternArrayValue(j, k + '');
+                    container.setPatternArrayValue(j, k + '  ');
                     if(pattern[j] === pattern[k]) {
                         yield;
                         container.patternDiv.resetColors();
@@ -371,13 +371,13 @@
                         container.comparePatterns(j, k, 'lightgreen');
                         k++;
                         yield;
-                        container.patternArrayValue.setChar(j, k - 1 + '++');
+                        container.patternArrayValue.setChar(j, k - 1 + '   ++');
                     }
                 }
                 yield;
-                container.setPatternArrayValue(j, k + '');
+                container.setPatternArrayValue(j, k + ' ');
                 yield;
-                container.setPatternArrayChar(j, k + '');
+                container.setPatternArrayChar(j, k + ' ');
                 table[j] = k;
                 yield;
                 container.patternDiv.resetColors();
